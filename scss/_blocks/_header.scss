@@ -1,0 +1,66 @@
+.header{
+    background-color: $midnight;
+    padding-top: 73px;
+    .nav{
+        .container{
+            @extend %flex-3;
+        }
+        &__logo img{
+            width: 145px;
+            height: 36px;
+        }
+        &__list{
+            position: relative;
+            width: 100%;
+            @extend %flex-3;
+            margin-left: 80px;
+        }
+        &__item:first-child{
+            margin-right: 40px;
+        }
+        &__btn-wrapper{
+            position: absolute;
+            right: 0;
+        }
+        &__link{
+            @extend %desc-1;
+            &:hover{
+                color: $ligt-coral;
+                transition: .3s ease all;
+            }
+        }
+        &__btn{
+            @extend %btn;
+            margin-left: auto;
+            display: flex;
+            justify-content: flex-end;
+            transition: .3s ease all;
+            &:hover{
+                background-color: $white;
+                color: #002529;
+            }
+        }
+    }
+}
+
+#check{
+    display: none;
+}
+
+#sign-1{
+    display: none;
+    color: $white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#sign-2{
+    display: none;
+    color: $white;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+
+

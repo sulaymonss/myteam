@@ -1,0 +1,192 @@
+.directors{
+    background-color: #004047;
+    background-image: url(../img/directors-bg-top.svg), url(../img/success-bg-1.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    .container{
+        padding: 140px 0;
+    }
+    &__title{
+        @extend %title;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item{
+        position: relative;
+        width: 350 * 100% / 1110;
+        margin-bottom: 76px;
+        @extend %flex-3;
+        flex-direction: column;
+        background-color: #012F34;
+        padding-top: 32px;
+    }
+    &__img{
+        border-radius: 50%;
+        border: 1px solid #C4FFFE;
+        margin-bottom: 16px;
+        width: 96px;
+    }
+    &__name{
+        font-size: 18px;
+        line-height: 28px;
+        color: #79C8C7;
+    }
+    &__job{
+        @extend %desc-2;
+        font-style: italic;
+        font-weight: 500;
+        margin-bottom: 56px;
+    }
+    .fa-plus{
+        position: absolute;
+        bottom: -28px;
+        left: 50%;
+        margin-left: -28px;
+        z-index: 2;
+        font-size: 20px;
+        color: #012F34;
+        background-color: #F67E7E;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: .3s ease all;
+        &:hover{
+            background-color: #79C8C7;
+        }
+    }
+    .fa-times{
+        position: absolute;
+        bottom: -28px;
+        left: 50%;
+        margin-left: -28px;
+        z-index: 2;
+        display: none;
+        background-color: #79C8C7;
+        color: #012F34;
+        font-size: 20px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s ease all;
+        &:hover{
+            background-color: $ligt-coral;
+        }
+    }
+}
+
+// modal start:
+.modal{
+    #modal{
+        display: none;
+        &:checked ~ .modal__box{
+            display: block;
+        }
+        &:checked ~ .fa-plus{
+            display: none;
+        }
+        &:checked ~ .fa-times{
+            @extend %flex-1;
+        }
+    }
+    #modal-2{
+        display: none;
+        &:checked ~ .modal__box{
+            display: block;
+        }
+        &:checked ~ .fa-plus{
+            display: none;
+        }
+        &:checked ~ .fa-times{
+            @extend %flex-1;
+        }
+    }
+    #modal-3{
+        display: none;
+        &:checked ~ .modal__box{
+            display: block;
+        }
+        &:checked ~ .fa-plus{
+            display: none;
+        }
+        &:checked ~ .fa-times{
+            @extend %flex-1;
+        }
+    }
+    #modal-4{
+        display: none;
+        &:checked ~ .modal__box{
+            display: block;
+        }
+        &:checked ~ .fa-plus{
+            display: none;
+        }
+        &:checked ~ .fa-times{
+            @extend %flex-1;
+        }
+    }
+    #modal-5{
+        display: none;
+        &:checked ~ .modal__box{
+            display: block;
+        }
+        &:checked ~ .fa-plus{
+            display: none;
+        }
+        &:checked ~ .fa-times{
+            @extend %flex-1;
+        }
+    }
+    #modal-6{
+        display: none;
+        &:checked ~ .modal__box{
+            display: block;
+        }
+        &:checked ~ .fa-plus{
+            display: none;
+        }
+        &:checked ~ .fa-times{
+            @extend %flex-1;
+        }
+    }
+    &__box{
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #002529;
+        padding: 35px 45px 0 45px;
+        h3{
+            text-align: center;
+            margin-bottom: 8px;
+        }
+    }
+    &__text{
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        @extend %desc-2;
+    }
+    &__social-links{
+        text-align: center;
+        i{
+            font-size: 24px;
+            margin: 8px;
+            color: #fff;
+            transition: .3s ease all;
+            &:hover{
+                color: coral;
+            }
+        }
+    }
+}

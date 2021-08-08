@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Livvic', 'Arial', sans-serif;
+    cursor: default;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.line{
+    width: 50px;
+    height: 4px;
+    border: none;
+    background-color: $ligt-coral;
+}
+

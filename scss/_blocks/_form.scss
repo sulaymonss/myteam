@@ -1,0 +1,109 @@
+.form{
+    background-image: url(../img/directors-bg-top.svg), url(../img/form-bg-2.svg);
+    background-repeat: no-repeat;
+    background-position: left 124px , bottom right;
+    background-color: $midnight;
+    .container{
+        @extend %flex-2;
+        flex-wrap: wrap;
+        padding: 120px 0;
+    }
+    &__text{
+        width: 49%;
+    }
+    &__title{
+        font-size: 64px;
+        line-height: 100px;
+        color: $white;
+        margin-bottom: 16px;
+    }
+    &__desc{
+        font-size: 32px;
+        line-height: 48px;
+        color: $ligt-coral;
+        margin-bottom: 32px;
+        font-weight: 700;
+    }
+    &__item{
+        @extend %flex-3;
+        margin-bottom: 8px;
+        &-text{
+            @extend %desc-1;
+            font-weight: 700;
+        }
+    }
+    &__img{
+        margin-right: 23px;
+        width: 72px;
+    }
+    &__content{
+        width: 47%;
+        input{
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $white;
+            margin-bottom: 8px;
+            padding: 16px;
+            transition: .3s ease all;
+            @extend %desc-2;
+            letter-spacing: -0.115385px;
+            &:focus{
+                outline: none;
+                border-bottom: 1px solid #79C8C7;
+            }
+            &:hover{
+                border-bottom: 1px solid #79C8C7;
+            }
+            &::placeholder{
+                @extend %desc-2;
+                opacity: .6;
+                letter-spacing: -0.115385px;
+            }
+        }
+        textarea{
+            padding: 16px;
+            margin-bottom: 24px;
+            transition: .3s ease all;
+            @extend %desc-2;
+            letter-spacing: -0.115385px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $white;
+            width: 100%;
+            height: 100px;
+            resize: none;
+            &::placeholder{
+                @extend %desc-2;
+                opacity: .5;
+                letter-spacing: -0.115385px;
+            }
+            &:hover{
+                border-bottom: 1px solid #79C8C7;
+            }
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+            &::-webkit-scrollbar-thumb {
+                width: 5px;
+                height: 5px;
+                background: #004047;  
+            }                          
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            @extend %btn;
+            color: #004047;
+            background-color: $white;
+            cursor: pointer;
+            transition: .3s ease all;
+            &:hover{
+                background-color: #79C8C7;
+                border: 2px solid #79C8C7;
+            }
+        }
+    }
+}
+

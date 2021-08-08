@@ -1,0 +1,24 @@
+.question{
+    background-color: $ligt-coral;
+    background-image: url(../img/question-bg.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    .container{
+        @extend %flex-2;
+        padding: 76px 100px;
+    }
+    &__title{
+        @extend %title;
+        color: #012F34;
+    }
+    &__btn{
+        @extend %btn;
+        border: 2px solid #012F34;
+        color: #012F34;
+        transition: .3s ease all;
+        &:hover{
+            background-color: #012F34;
+            color: $white;
+        }
+    }
+}

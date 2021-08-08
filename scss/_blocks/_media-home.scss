@@ -1,0 +1,303 @@
+@media(max-width:1150px){
+    .container{
+        width: 1000px;
+    }
+}
+@media(max-width:1010px){
+    .container{
+        width: 900px;
+    }
+    .intro__title{
+        font-size: 80px;
+    }
+    
+}
+@media(max-width:915px){
+    .container{
+        width: 90%;
+    }
+    .intro__title{
+        font-size: 70px;
+    }
+    .intro__desc{
+        font-size: 16px;
+    }
+    .intro__line{
+        margin-bottom: 50px;
+    }
+    .team__title{
+        font-size: 40px;
+    }
+    .success__title{
+        font-size: 40px;
+    }
+    .question__title{
+        font-size: 40px;
+    }
+    .question{
+        .container{
+            padding: 76px 0;
+        }
+    }
+}
+
+@media(max-width:810px){
+    .footer{
+        &__nav{
+            margin-right: 60px;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .header{
+        padding-top: 60px;
+        .nav{
+            .container{
+                padding: 0;
+            }
+            &__list{
+                margin-left: 48px;
+            }
+        }
+    }
+    .intro{
+        background-image: none;
+        .container{
+            background-position: center bottom;
+        }
+        &__title{
+            width: 100%;
+            margin: 0 auto;
+            font-size: 64px;
+            line-height: 56px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        &__right{
+            width: 100%;
+            max-width: 457px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__line{
+            display: none;
+        }
+        &__desc{
+            font-size: 15px;
+        }
+    }
+    .team{
+        background-position: top right;
+        .container{
+            padding: 100px 0;
+            padding-left: 55px;
+        }
+        &__text{
+            width: 100%;
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 60px;
+        }
+        &__list{
+            width: 100%;
+        }
+        &__line{
+            margin-bottom: 32px;
+        }
+    }
+    .success{
+        .container{
+            padding: 100px 0;
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 32px;
+        }
+        &__item{
+            width: 100%;
+            margin-bottom: 70px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .question{
+        .container{
+            padding: 90px 0;
+        }
+        &__title{
+            font-size: 32px;
+        }
+    }
+    .footer{
+        .container{
+            display: block;
+        }
+        &__left{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 34px;
+        }
+        &__logo{
+            margin-bottom: 40px;
+        }
+        &__media{
+            display: block;
+            margin-bottom: 0;
+        }
+        &__right{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media(max-width:580px){
+    .header{
+        .container{
+            position: relative;
+        }
+        padding-top: 48px;
+        .nav{
+            &__list{
+                position: fixed;
+                z-index: 3;
+                background: #2C6269;
+                width: 70%;
+                top: 0;
+                right: -80%;
+                bottom: 0;
+                display: block;
+                padding-top: 112px;
+                transition: .3s ease all; 
+                background-image: url(../img/modal-bg.svg);
+                background-repeat: no-repeat;
+                background-position: bottom right;
+            }
+            &__item{
+                margin-left: 48px;
+                margin-bottom: 24px;
+            }
+            &__btn-wrapper{
+                width: 156px;
+                top: 230px;
+                left: 50px;
+            }
+        }
+    }
+    .intro{
+        .container{
+            padding-top: 80px;
+            padding-bottom: 200px;
+        }
+    }
+    #sign-1{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    // #check:checked ~ .header .nav{
+    //     background: rgba(0,0,0,0.5);
+    // }
+    #check:checked ~ .nav__list{
+        right: 0;
+    }
+    #check:checked ~ .label #sign-1{
+        display: none;
+    }
+    #check:checked ~ .label #sign-2{
+        display: block;
+        position: fixed;
+        top: 57px;
+        right: 5.5%;
+        z-index: 4;
+    }
+    .team{
+        .container{
+            padding: 60px 0;
+        }
+        &__text{
+            width: 80%;
+        }
+        &__item{
+            flex-direction: column;  
+            text-align: center;   
+            &-img{
+                margin-right: 0;
+                margin-bottom: 16px;
+            }      
+        }
+    }
+    .success{
+        .container{
+            padding: 140px 0;
+        }
+        &__title{
+            width: 100%;
+        }
+    }
+    .question{
+        .container{
+            flex-direction: column;
+            padding: 80px 0 100px 0;
+            text-align: center;
+        }
+        &__title{
+            margin-bottom: 24px;
+            line-height: 32px;
+        }
+    }
+}
+
+@media(max-width:500px){
+    .container{
+        width: 95%;
+    }
+    #check:checked ~ .label #sign-2{
+        right: 3%;
+    }
+    .intro{
+        &__title{
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__desc{
+            font-size: 15px;
+        }
+    }
+    .footer{
+        .container{
+            padding: 60px 0;
+            text-align: center;
+        }
+        &__left{
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        &__right{
+            flex-direction: column;
+        }
+        &__nav{
+            margin-right: 0;
+        }
+        &__logo{
+            width: 96px;
+            height: 24px;
+            margin-bottom: 24px;
+        }
+        &__list{
+            margin-bottom: 24px;
+        }
+        &__link{
+            font-size: 15px;
+        }
+        &__media{
+            margin-bottom: 16px;
+        }
+    }
+}

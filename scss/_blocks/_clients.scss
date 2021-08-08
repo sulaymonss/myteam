@@ -1,0 +1,20 @@
+.clients{
+    background-color: #012F34;
+    background-image: url(../img/clients-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    .container{
+        padding: 140px 0;
+    }
+    &__title{
+        @extend %title;
+        margin-bottom: 64px;
+        text-align: center;
+    }
+    &__list{
+        @extend %flex-2;
+    }
+    &__item:not(:last-child){
+        margin-right: 20px;
+    }
+}

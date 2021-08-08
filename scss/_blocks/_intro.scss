@@ -1,0 +1,32 @@
+.intro{
+    background-image: url(../img/intro-bg-1.svg);
+    background-repeat: no-repeat;
+    background-position: left 120px;
+    .container{
+        @extend %flex-2;
+        flex-wrap: wrap;
+        background-image: url(../img/intro-bg-2.svg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        padding-top: 129px;
+        padding-bottom: 250px;
+    }
+    &__title{
+        font-size: 100px;
+        line-height: 100px;
+        color: $white;
+        span{
+            color: $ligt-coral;
+        }
+    }
+    &__right{
+        width: 40%;
+    }
+    &__line{
+        background-color: #79C8C7;
+        margin-bottom: 79px;
+    }
+    &__desc{
+        @extend %desc-1;
+    }
+}

@@ -1,0 +1,55 @@
+// colors:
+$midnight: #014E56;
+$ligt-coral:#F67E7E;
+$white: #FFFFFF;
+
+// general styles:
+%title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: $white;
+}
+
+%desc-1{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $white;
+}
+
+%desc-2{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: $white;
+}
+
+%btn{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $white;
+    border: 2px solid $white;
+    border-radius: 24px;
+    background-color: transparent;
+    padding: 10px 32px;
+}
+
+%flex-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%flex-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%flex-3{
+    display: flex;
+    align-items: center;
+}

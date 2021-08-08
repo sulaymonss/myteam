@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myteam(contact)</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <a href="./index.html" class="nav__logo"><img src="./img/logo.svg" alt="logo"></a>
+                <input id="check" type="checkbox">
+                <label class="label" for="check">
+                    <i class="fas fa-bars" id="sign-1"></i>
+                    <i class="fas fa-times"  id="sign-2"></i>
+                </label>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link">home</a></li>
+                    <li class="nav__item"><a href="./about.html" class="nav__link">about</a></li>
+                    <li class="nav__btn-wrapper"><a href="./contact.html" class="nav__btn">contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <section class="form">
+            <div class="container">
+                <div class="form__text">
+                    <h1 class="form__title">Contact</h1>
+                    <p class="form__desc">Ask us about</p>
+                    <ul class="form__list">
+                        <li class="form__item">
+                            <img src="./img/team-1.svg" alt="team 1 img" class="form__img">
+                            <p class="form__item-text">The quality of our talent network</p>
+                        </li>
+                        <li class="form__item">
+                            <img src="./img/team-2.svg" alt="team 2 img" class="form__img">
+                            <p class="form__item-text">Usage & implementation of our software</p>
+                        </li>
+                        <li class="form__item">
+                            <img src="./img/team-3.svg" alt="team 3 img" class="form__img">
+                            <p class="form__item-text">How we help drive innovation</p>
+                        </li>
+                    </ul>
+                </div>
+                <form class="form__content" action="https://echo.htmlacademy.ru" method="POST">
+                    <label for="name">
+                        <input required type="text" id="name" name="user__name" placeholder="Name">
+                    </label> <br>
+                    <label for="email">
+                        <input required type="email" id="email" name="user__email" placeholder="Email Address">
+                    </label> <br>
+                    <label for="company">
+                        <input required type="text" id="company" name="user__company" placeholder="Company Name">
+                    </label> <br>
+                    <label for="title">
+                        <input required type="text" id="title" name="title" placeholder="Title">
+                    </label> <br>
+                    <label for="message">
+                        <textarea required name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </label> <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__left">
+                <div class="footer__nav">
+                    <a href="./index.html"><img src="./img/logo.svg" alt="logo" class="footer__logo" width="160" height="40"></a>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="./index.html" class="footer__link">home</a></li>
+                        <li class="footer__item"><a href="./about.html" class="footer__link">about</a></li>
+                    </ul>
+                </div>
+                <p class="footer__info">987  Hillcrest Lane <br> Irvine, CA <br> California 92714 <br> Call Us : 949-833-7432</p>
+            </div>
+            <div class="footer__right">
+                <div class="footer__media">
+                    <a target="_blank" href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a target="_blank" href="#">  <i class="fab fa-pinterest"></i></a>
+                    <a target="_blank" href="#"><i class="fab fa-twitter"></i> </a>
+                </div>
+                <p>Copyright 2020. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
